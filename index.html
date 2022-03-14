@@ -123,38 +123,33 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {loop: true});
-      function playPauseVideo() {
-    let videos = document.querySelectorAll("video");
-    videos.forEach((video) => {
-        // We can only control playback without insteraction if video is mute
-        video.muted = true;
-        // Play is a promise so we need to check we have it
-        let playPromise = video.play();
-        if (playPromise !== undefined) {
-            playPromise.then((_) => {
-                let observer = new IntersectionObserver(
-                    (entries) => {
-                        entries.forEach((entry) => {
-                            if (
-                                entry.intersectionRatio !== 1 &&
-                                !video.paused
-                            ) {
-                                video.pause();
-                            } else if (video.paused) {
-                                video.play();
-                            }
-                        });
-                    },
-                    { threshold: 1 }
-                );
-                observer.observe(video);
-            });
-        }
-    });
-}
+      const video = document.querySelector("video");
+let playState = null;
 
-// And you would kick this off where appropriate with:
-playPauseVideo();
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      video.pause();
+      playState = false;
+    } else {
+      video.play();
+      playState = true;
+    }
+  });
+}, {});
+
+observer.observe(video);
+
+const onVisibilityChange = () => {
+  if (document.hidden || !playState) {
+    video.pause();
+  } else {
+    video.play();
+  }
+};
+
+document.addEventListener("visibilitychange", onVisibilityChange);
+
 
     </script>
     
