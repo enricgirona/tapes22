@@ -1,0 +1,105 @@
+body {
+  height: 120vh;
+  padding: 0;
+  margin: 0;
+  background-color: #f0dfc3;
+}
+
+.column-header-middle-tapa {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+}
+
+.column-header-middle-tapa > p {
+  margin: 0;
+}
+
+.image-container {
+  height: 300px;
+  background-color: green;
+}
+
+.section-scroll {
+  scroll-snap-type: x mandatory;
+}
+
+.header-tapa {
+  min-height: 50px;
+  background-color: #f0dfc3;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+  z-index: 10;
+  position: fixed;
+  width: -webkit-fill-available;
+  top: 0;
+}
+
+.column-header-middle-tapa {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 400;
+  color: black;
+}
+
+.column-header-middle-tapa > p {
+  margin: 0;
+}
+
+.elementor-column-gap-default > .elementor-column > .elementor-element-populated {
+  padding: 0;
+}
+
+.img-header {
+  height: 22px !important;
+}
+
+.video-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 0;
+}
+
+.info-tapa {
+  padding: 16px 24px;
+  border-radius: 20px;
+  margin-top: -35px;
+  background-color: #4d509d;
+  min-height: 376px;
+  color: white;
+  z-index: 10;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  position: absolute;
+  width: -webkit-fill-available;
+}
+
+.bar-name {
+  font-size: 15px !important;
+  font-weight: 400;
+  margin-bottom: 3px !important;
+  text-transform: uppercase;
+}
+
+.tapa-name {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.scroll {
+  overflow: scroll;
+}
