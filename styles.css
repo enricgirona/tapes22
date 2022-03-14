@@ -5,6 +5,10 @@ body {
   background-color: #f0dfc3;
 }
 
+video {
+  z-index: 0;
+}
+
 .column-header-middle-tapa {
   width: 50%;
   display: flex;
