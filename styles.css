@@ -71,8 +71,8 @@ video {
 
 .video-js .vjs-tech {
   background-color: white !important;
-  height: 85% !important;
-  margin-top: 10%;
+  height: 100% !important;
+  margin-top: 5%;
   z-index: 0;
 }
 
@@ -92,8 +92,9 @@ video {
   background-color: white;
   z-index: 0;
   height: 300px;
-  position: absolute;
+  position: fixed;
   width: -webkit-fill-available;
+  margin-left: -19px;
 }
 
 .info-tapa {
