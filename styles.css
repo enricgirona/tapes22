@@ -100,7 +100,7 @@ video {
   z-index: 999;
   padding: 16px 24px;
   border-radius: 20px;
-  margin-top: -15px;
+  margin-top: 0;
   background-color: #4d509d;
   min-height: 376px;
   color: white;
