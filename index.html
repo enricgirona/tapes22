@@ -42,7 +42,7 @@
           width="300"
           data-setup="{}"
         >
-          <source src="https://72011.gvideo.io/videos/72011_MDtZxSVRdFBaud/index-svod360n-v1.m3u8" type="application/x-mpegURL" />
+          <source src="https://72011.gvideo.io/videos/72011_MDtZxSVRdFBaud/index-svod480n-v1.m3u8" type="application/x-mpegURL" />
 
       
         </video></div>
@@ -164,41 +164,46 @@
     </div>
    
     </div>
+    
     <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>   
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  
+    <script>function playPauseVideo() {
+      let videos = document.querySelectorAll('video');
+      videos.forEach((video) => {
+          // We can only control playback without insteraction if video is mute
+          video.muted = true;
+          // Play is a promise so we need to check we have it
+          let playPromise = video.play();
+          if (playPromise !== undefined) {
+              playPromise.then((_) => {
+                  let observer = new IntersectionObserver(
+                      (entries) => {
+                          entries.forEach((entry) => {
+                              if (
+                                  entry.intersectionRatio !== 1 &&
+                                  !video.paused
+                              ) {
+                                  video.pause();
+                              } else if (video.paused) {
+                                  video.play();
+                              }
+                          });
+                      },
+                      { threshold: 1 }
+                  );
+                  observer.observe(video);
+              });
+          }
+      });
+  }</script>
+     
     <script>
       var swiper = new Swiper(".mySwiper", {loop: true,
         centeredSlides: true, slidesPerView: 1.05 });
-        
-      const video = document.querySelector("video");
-let playState = null;
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      video.pause();
-      playState = false;
-    } else {
-      video.play();
-      playState = true;
-    }
-  });
-}, {});
-
-observer.observe(video);
-
-const onVisibilityChange = () => {
-  if (document.hidden || !playState) {
-    video.pause();
-  } else {
-    video.play();
-  }
+        window.onload = function() {
+          playPauseVideo();
 };
-
-document.addEventListener("visibilitychange", onVisibilityChange);
-
-
     </script>
+
   </body>
 </html>
