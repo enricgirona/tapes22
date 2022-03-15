@@ -49,6 +49,7 @@
         <div class="info-tapa">
           <h2 class="bar-name">bar celedoni</h2>
           <h2 class="tapa-name">Rellom de porc</h2>
+          <p class="tapa-description">amb xampinyons i salsa de pimentó rostit</p>
         </div>
       </div>
         <div class="swiper-slide">
@@ -70,7 +71,8 @@
           </video></div>
         <div class="info-tapa" style="background-color: #E84141;">
           <h2 class="bar-name">burguer infinity</h2>
-          <h2 class="tapa-name">Rellom de porc</h2>
+          <h2 class="tapa-name">Cuixa de pollastre</h2>
+          <p class="tapa-description">Cuixa de pollastre cruixent amb salsa blanca</p>
         </div>
       </div>
       <div class="swiper-slide">
@@ -90,9 +92,10 @@
 
       
         </video></div>
-      <div class="info-tapa" style="background-color: #FABA19;">
+      <div class="info-tapa" style="background-color: #FABA19; color: #4D509D;">
         <h2 class="bar-name">el mosset d'exequiel</h2>
-        <h2 class="tapa-name">Rellom de porc</h2>
+        <h2 class="tapa-name">Cielito Lindo</h2>
+        <p class="tapa-description"><em>Nacho</em> artesanal amb tomaca, ceba morada, coriandre i llima, gratinat amb mozzarella, cheddar i guacamole casolà.</p>
       </div>
     </div>
     <div class="swiper-slide"><div class="video-container"><video
@@ -113,7 +116,7 @@
     </video></div>
     <div class="info-tapa">
       <h2 class="bar-name">la alameda</h2>
-      <h2 class="tapa-name">Rellom de porc</h2>
+      <h2 class="tapa-name">Duet de brandada de bacallà i gambes amb coulis de tomàquet</h2>
     </div>
   </div>
     <div class="swiper-slide">
@@ -135,7 +138,8 @@
       </video></div>
     <div class="info-tapa" style="background-color: #E84141;">
       <h2 class="bar-name">la cantonada</h2>
-      <h2 class="tapa-name">Rellom de porc</h2>
+      <h2 class="tapa-name">La Cantonada Wrap</h2>
+      <p class="tapa-description">Fajita wrap de pollastre, bacó, formatge i salsa Cèsar.</p>
     </div>
   </div>
   <div class="swiper-slide">
@@ -157,7 +161,7 @@
     </video></div>
   <div class="info-tapa" style="background-color: #FABA19;">
     <h2 class="bar-name">la masia</h2>
-    <h2 class="tapa-name">Rellom de porc</h2>
+    <h2 class="tapa-name">Creps de tonyina i surimi</h2>
   </div>
 </div>
 <div class="swiper-slide"><div class="video-container"><video
@@ -222,7 +226,7 @@
 </video></div>
 <div class="info-tapa" style="background-color: #FABA19;">
 <h2 class="bar-name">la taska de sisco</h2>
-<h2 class="tapa-name">Rellom de porc</h2>
+<h2 class="tapa-name">Filopollo Paticorto</h2>
 </div>
 </div>
 <div class="swiper-slide"><div class="video-container"><video
@@ -243,7 +247,7 @@ data-setup="{}"
 </video></div>
 <div class="info-tapa">
 <h2 class="bar-name">lo paseo</h2>
-<h2 class="tapa-name">Rellom de porc</h2>
+<h2 class="tapa-name">Cornet de pollastre amb curri amb cacauet i allioli de pebre rosa</h2>
 </div>
 </div>
 <div class="swiper-slide">
@@ -265,7 +269,7 @@ data-setup="{}"
 </video></div>
 <div class="info-tapa" style="background-color: #E84141;">
 <h2 class="bar-name">oco bar gastronòmic</h2>
-<h2 class="tapa-name">Rellom de porc</h2>
+<h2 class="tapa-name">Caneló d’albergínia amb crema amb carpaccio de gamba</h2>
 </div>
 </div>
 <div class="swiper-slide">
@@ -287,7 +291,7 @@ data-setup="{}"
 </video></div>
 <div class="info-tapa" style="background-color: #FABA19;">
 <h2 class="bar-name">taperia dalia's</h2>
-<h2 class="tapa-name">Rellom de porc</h2>
+<h2 class="tapa-name">La pulled de l’hort</h2>
 </div>
 </div>
 <div class="swiper-slide">
@@ -309,16 +313,16 @@ data-setup="{}"
   </video></div>
   <div class="info-tapa" style="background-color: #E84141;">
   <h2 class="bar-name">xocola't</h2>
-  <h2 class="tapa-name">Rellom de porc</h2>
+  <h2 class="tapa-name">Fried burguer</h2>
   </div>
   </div>
       </div>
     </div>
    
     </div>
-    
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
     <script src="https://vjs.zencdn.net/7.18.1/video.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>  
+     
     <script>function playPauseVideo() {
       let videos = document.querySelectorAll('video');
       videos.forEach((video) => {
@@ -352,7 +356,7 @@ data-setup="{}"
      
     <script>
       var swiper = new Swiper(".mySwiper", {loop: true,
-        centeredSlides: true, slidesPerView: 1.05 });
+        centeredSlides: true, slidesPerView: 1.055 });
         window.onload = function() {
           playPauseVideo();
 };
