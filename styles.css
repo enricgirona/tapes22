@@ -71,8 +71,8 @@ video {
 
 .video-js .vjs-tech {
   background-color: white !important;
-  height: 30% !important;
-  margin-top: 90%;
+  height: 90% !important;
+  margin-top: 12%;
   z-index: 0;
 }
 
@@ -100,7 +100,7 @@ video {
   z-index: 999;
   padding: 16px 24px;
   border-radius: 20px;
-  margin-top: 0;
+  margin-top: -15px;
   background-color: #4d509d;
   min-height: 376px;
   color: white;
