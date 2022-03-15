@@ -1,5 +1,5 @@
 body {
-  height: 120vh;
+  height: 100vh;
   padding: 0;
   margin: 0;
   background-color: #f0dfc3;
@@ -69,12 +69,23 @@ video {
   height: 22px !important;
 }
 
+.video-js .vjs-tech {
+  background-color: white !important;
+  height: 85% !important;
+  margin-top: 10%;
+}
+
+.my-video-dimensions {
+  background-color: white !important;
+}
+
 .video-container {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
   z-index: 0;
+  height: 300px;
 }
 
 .info-tapa {
