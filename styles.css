@@ -95,13 +95,14 @@ video {
   position: fixed;
   width: -webkit-fill-available;
   margin-left: -19px;
+  padding-bottom: 20px;
 }
 
 .info-tapa {
   z-index: 999;
   padding: 17px 24px;
   border-radius: 20px;
-  margin-top: -10px;
+  margin-top: 0;
   background-color: #4d509d;
   min-height: 342px;
   color: white;
@@ -137,10 +138,50 @@ video {
   line-height: 22px;
   margin: 0;
   letter-spacing: 0.1px;
+  margin-bottom: 7px;
 }
 
 .vjs-poster {
   height: 85% !important;
   background-color: #ffffff !important;
   margin-top: 10% !important;
+}
+
+.toggle-icon-closed svg {
+  width: 10px;
+  height: 10px;
+}
+
+.toggle-icon-opened svg {
+  width: 10px;
+  height: 10px;
+}
+
+.toggle-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 4px;
+  letter-spacing: 0.2px;
+}
+
+.toggle {
+  margin-bottom: 10px;
+}
+
+.toggle-content {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0;
+  letter-spacing: 0.1px;
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+p {
+  margin: 0;
+}
+
+.closed {
+  display: none;
 }
