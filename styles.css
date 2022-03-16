@@ -23,6 +23,9 @@ video {
   margin: 0;
 }
 
+.swiper {
+  height: 110vh;
+}
 .image-container {
   height: 300px;
   background-color: green;
@@ -102,7 +105,7 @@ video {
   border-radius: 20px;
   margin-top: 0;
   background-color: #4d509d;
-  min-height: 324px;
+  min-height: 345px;
   color: white;
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol" !important;
