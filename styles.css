@@ -93,7 +93,7 @@ video {
   height: 300px;
   position: absolute;
   width: -webkit-fill-available;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .info-tapa {
@@ -107,7 +107,7 @@ video {
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol" !important;
   position: absolute;
-  top: 300px;
+  top: 315px;
   width: -webkit-fill-available;
 }
 
