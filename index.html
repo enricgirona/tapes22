@@ -39,7 +39,21 @@
 
 </head>
   <body>
-    <div class="loading-screen"><h2 class="tapa-name" style="color:#4D509D">DESTAPA LES GANES</h2></div>
+    <div class="loading-screen">
+      <div class="swiper intro">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide first-slide" style="flex-direction: column;"><div class="column-header-middle-tapa">
+            <img class="img-header" style="
+            height: 56px!important;
+            margin-bottom: 5px;
+        " src="../static/logo.svg">
+          </div><h2 class="tapa-name" style="color:#4D509D">DESTAPA LES GANES</h2></div>
+          <div class="swiper-slide second-slide"><h2 class="tapa-name" style="color:#4D509D">DESTAPA LES GANES</h2></div>
+          </div>
+        </div>
+      </div>
     <div class="header-tapa">
       <div class="column-header-tapa"></div>
       <div class="column-header-middle-tapa">
@@ -199,7 +213,7 @@
         playsinline
         muted
         loop
-        preload="auto"
+        preload="none"
         height="300"
         width="300"
         data-setup="{}"
@@ -234,7 +248,7 @@
       playsinline
       muted
       loop
-      preload="auto"
+      preload="none"
       height="300"
       width="300"
       data-setup="{}"
@@ -268,7 +282,7 @@
   playsinline
   muted
   loop
-  preload="auto"
+  preload="none"
   height="300"
   width="300"
   data-setup="{}"
@@ -303,7 +317,7 @@
     playsinline
     muted
     loop
-    preload="auto"
+    preload="none"
     height="300"
     width="300"
     data-setup="{}"
@@ -338,7 +352,7 @@
   playsinline
   muted
   loop
-  preload="auto"
+  preload="none"
   height="300"
   width="300"
   data-setup="{}"
@@ -373,7 +387,7 @@ autoplay
 playsinline
 muted
 loop
-preload="auto"
+preload="none"
 height="300"
 width="300"
 data-setup="{}"
@@ -409,7 +423,7 @@ autoplay
 playsinline
 muted
 loop
-preload="auto"
+preload="none"
 height="300"
 width="300"
 data-setup="{}"
@@ -444,7 +458,7 @@ autoplay
 playsinline
 muted
 loop
-preload="auto"
+preload="none"
 height="300"
 width="300"
 data-setup="{}"
@@ -552,6 +566,8 @@ data-setup="{}"
     <script>
       var swiper = new Swiper(".mySwiper", {loop: true,
         centeredSlides: true, slidesPerView: 1.055 });
+        var swiper = new Swiper(".intro", {loop: false,
+        centeredSlides: true, slidesPerView: 1 });
         window.onload = function() {
           playPauseVideo();
 };
