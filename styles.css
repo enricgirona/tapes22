@@ -15,6 +15,18 @@ body::-webkit-scrollbar {
   height: 0;
 }
 
+.loading-screen {
+  height: 100vh;
+  width: -webkit-fill-available;
+  background-color: #f0dfc3;
+  z-index: 11;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 html {
   scrollbar-width: none;
 }
@@ -23,7 +35,7 @@ video {
   z-index: 0;
 }
 .vjs-loading-spinner {
-  margin-top: 25px;
+  margin-top: 25px !important;
 }
 
 .column-header-middle-tapa {
@@ -149,6 +161,8 @@ video {
   line-height: 32px;
   font-weight: 400;
   margin: 0;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol" !important;
   letter-spacing: 0.3px;
   margin-bottom: 8px !important;
 }

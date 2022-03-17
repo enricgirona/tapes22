@@ -39,6 +39,7 @@
 
 </head>
   <body>
+    <div class="loading-screen"><h2 class="tapa-name" style="color:#4D509D">DESTAPA LES GANES</h2></div>
     <div class="header-tapa">
       <div class="column-header-tapa"></div>
       <div class="column-header-middle-tapa">
@@ -554,7 +555,11 @@ data-setup="{}"
         window.onload = function() {
           playPauseVideo();
 };
+window.onload = setTimeout(() => {
+  document.getElementsByClassName("loading-screen")[0].style.display = "none";
+}, 3000);
     </script>
+    
    
   </body>
 </html>
