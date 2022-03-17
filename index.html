@@ -213,7 +213,7 @@
         playsinline
         muted
         loop
-        preload="none"
+        preload="auto"
         height="300"
         width="300"
         data-setup="{}"
@@ -248,7 +248,7 @@
       playsinline
       muted
       loop
-      preload="none"
+      preload="auto"
       height="300"
       width="300"
       data-setup="{}"
@@ -282,7 +282,7 @@
   playsinline
   muted
   loop
-  preload="none"
+  preload="auto"
   height="300"
   width="300"
   data-setup="{}"
@@ -317,7 +317,7 @@
     playsinline
     muted
     loop
-    preload="none"
+    preload="auto"
     height="300"
     width="300"
     data-setup="{}"
@@ -352,7 +352,7 @@
   playsinline
   muted
   loop
-  preload="none"
+  preload="auto"
   height="300"
   width="300"
   data-setup="{}"
@@ -387,7 +387,7 @@ autoplay
 playsinline
 muted
 loop
-preload="none"
+preload="auto"
 height="300"
 width="300"
 data-setup="{}"
@@ -423,7 +423,7 @@ autoplay
 playsinline
 muted
 loop
-preload="none"
+preload="auto"
 height="300"
 width="300"
 data-setup="{}"
@@ -458,7 +458,7 @@ autoplay
 playsinline
 muted
 loop
-preload="none"
+preload="auto"
 height="300"
 width="300"
 data-setup="{}"
@@ -555,7 +555,7 @@ data-setup="{}"
                               }
                           });
                       },
-                      { threshold: 0.5 }
+                      { threshold: 0.1 }
                   );
                   observer.observe(video);
               });
@@ -571,7 +571,7 @@ data-setup="{}"
         
 window.onload = setTimeout(() => {
   document.getElementsByClassName("loading-screen")[0].style.display = "none";playPauseVideo();
-}, 3000);
+}, 5000);
     </script>
     
    
