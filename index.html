@@ -568,11 +568,9 @@ data-setup="{}"
         centeredSlides: true, slidesPerView: 1.055 });
         var swiper = new Swiper(".intro", {loop: false,
         centeredSlides: true, slidesPerView: 1 });
-        window.onload = function() {
-          playPauseVideo();
-};
+        
 window.onload = setTimeout(() => {
-  document.getElementsByClassName("loading-screen")[0].style.display = "none";
+  document.getElementsByClassName("loading-screen")[0].style.display = "none";playPauseVideo();
 }, 3000);
     </script>
     
