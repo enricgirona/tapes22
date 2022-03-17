@@ -24,7 +24,7 @@ video {
 }
 
 .swiper {
-  height: 694px;
+  height: 707px;
 }
 .image-container {
   height: 300px;
@@ -73,8 +73,8 @@ video {
 
 .video-js .vjs-tech {
   background-color: white !important;
-  height: 100% !important;
-  margin-top: 15px;
+  height: 270 !important;
+  margin-top: 50px;
   z-index: 0;
 }
 
@@ -83,6 +83,8 @@ video {
 }
 
 .my-video-dimensions {
+  height: 270px;
+  width: 270px;
   background-color: white !important;
   z-index: 0;
 }
@@ -93,10 +95,10 @@ video {
   justify-content: center;
   background-color: white;
   z-index: 0;
-  height: 300px;
+  height: 270px;
   position: absolute;
   width: -webkit-fill-available;
-  padding-bottom: 40px;
+  padding-bottom: 70px;
 }
 
 .info-tapa {
@@ -110,7 +112,7 @@ video {
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol" !important;
   position: absolute;
-  top: 315px;
+  top: 320px;
   width: -webkit-fill-available;
 }
 
