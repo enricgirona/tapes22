@@ -22,6 +22,9 @@ html {
 video {
   z-index: 0;
 }
+.vjs-loading-spinner {
+  margin-top: 25px;
+}
 
 .column-header-middle-tapa {
   width: 50%;
