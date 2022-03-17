@@ -8,6 +8,11 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+@font-face {
+  font-family: "Barracuda";
+  src: url("../static/fonts/Barracuda-Bold.ttf");
+}
+
 ::-webkit-scrollbar,
 *::-webkit-scrollbar {
   display: none;
@@ -161,9 +166,9 @@ video {
   line-height: 32px;
   font-weight: 400;
   margin: 0;
-  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol" !important;
-  letter-spacing: 0.3px;
+  font-family: Barracuda, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  letter-spacing: 0.8px;
   margin-bottom: 8px !important;
 }
 
