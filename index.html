@@ -44,15 +44,13 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide first-slide" style="flex-direction: column;"><div class="column-header-middle-tapa">
-            <img class="img-header" style="
-            height: 56px!important;
-            margin-bottom: 5px;
-        " src="../static/logo.svg">
-          </div><h2 class="tapa-name" style="color:#4D509D">DESTAPA LES GANES</h2></div>
-          <div class="swiper-slide second-slide"><h2 class="tapa-name" style="color:#4D509D">DESTAPA LES GANES</h2></div>
+          <div class="swiper-slide first-slide">
+            <img class="img-slider-1"  src="../static/ilus_tapes.svg">
+          <div class="intro-content"><h2 class="intro-head">DESTAPA LES GANES!</h2><p class="intro-text">Bona companyia, aires primaverals i delicioses tapes <em>made in Ulldecona</em> són els ingredients perfectes per sortir amb ganes de menjarte (literalment) lo poble.</p></div></div>
+          <div class="swiper-slide third-slide"><img class="img-slider-3"  src="../static/ilus_tapes1.svg"><div class="intro-content"><h2 class="intro-head">#ULLVADETAPES22</h2><p class="intro-text">Descobreix-ho tot sobre les tapes d'Ulldecona a continuació.</p><button onclick="continuar()">Destapa!</button></div></div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     <div class="header-tapa">
       <div class="column-header-tapa"></div>
@@ -68,6 +66,7 @@
         <div class="swiper-slide"><div class="video-container"><video
           id="my-video"
           class="video-js"
+          autoplay
           playsinline
           muted
           loop
@@ -103,10 +102,11 @@
           <div class="video-container"><video
             id="my-video"
             class="video-js"
+            autoplay
             playsinline
             muted
             loop
-            preload="auto"
+            preload="none"
             height="300"
             width="300"
             data-setup="{}"
@@ -140,7 +140,7 @@
           playsinline
           muted
           loop
-          preload="auto"
+          preload="none"
           height="300"
           width="300"
           data-setup="{}"
@@ -174,7 +174,7 @@
       playsinline
       muted
       loop
-      preload="auto"
+      preload="none"
       height="300"
       width="300"
       data-setup="{}"
@@ -208,7 +208,7 @@
         playsinline
         muted
         loop
-        preload="auto"
+        preload="none"
         height="300"
         width="300"
         data-setup="{}"
@@ -242,7 +242,7 @@
       playsinline
       muted
       loop
-      preload="auto"
+      preload="none"
       height="300"
       width="300"
       data-setup="{}"
@@ -275,7 +275,7 @@
   playsinline
   muted
   loop
-  preload="auto"
+  preload="none"
   height="300"
   width="300"
   data-setup="{}"
@@ -309,7 +309,7 @@
     playsinline
     muted
     loop
-    preload="auto"
+    preload="none"
     height="300"
     width="300"
     data-setup="{}"
@@ -343,7 +343,7 @@
   playsinline
   muted
   loop
-  preload="auto"
+  preload="none"
   height="300"
   width="300"
   data-setup="{}"
@@ -377,7 +377,7 @@ class="video-js"
 playsinline
 muted
 loop
-preload="auto"
+preload="none"
 height="300"
 width="300"
 data-setup="{}"
@@ -412,7 +412,7 @@ class="video-js"
 playsinline
 muted
 loop
-preload="auto"
+preload="none"
 height="300"
 width="300"
 data-setup="{}"
@@ -446,7 +446,7 @@ class="video-js"
 playsinline
 muted
 loop
-preload="auto"
+preload="none"
 height="300"
 width="300"
 data-setup="{}"
@@ -478,6 +478,7 @@ data-setup="{}"
   <div class="video-container"><video
   id="my-video"
   class="video-js"
+  autoplay
   playsinline
   muted
   loop
@@ -554,11 +555,14 @@ data-setup="{}"
       var swiper = new Swiper(".mySwiper", {loop: true,
         centeredSlides: true, slidesPerView: 1.055 });
         var swiper = new Swiper(".intro", {loop: false,
-        centeredSlides: true, slidesPerView: 1 });
-        
-window.onload = setTimeout(() => {
-  document.getElementsByClassName("loading-screen")[0].style.display = "none";playPauseVideo();
-}, 5000);
+        centeredSlides: true, slidesPerView: 1, pagination: {
+    el: '.swiper-pagination',
+  },});
+        function continuar()
+        {
+          document.getElementsByClassName("loading-screen")[0].style.display = "none";
+          playPauseVideo();
+        }
     </script>
     
    
