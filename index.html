@@ -38,7 +38,13 @@
 />
 
 </head>
-  <body>
+  <body class="lock-scroll">
+    <div class="desktop">
+<div class="qr-image"><img src="../static/qr_web.svg" style="height: 220px;"></div>
+<div style="width: 220px; padding-top: 15px;"><p class="intro-text" style="text-align:left">Escaneja el QR i descobreix-ho tot sobre les tapes d'Ulldecona.</p></div>
+
+
+    </div>
     <div class="loading-screen">
       <div class="swiper intro">
         <!-- Additional required wrapper -->
@@ -561,6 +567,8 @@ data-setup="{}"
         function continuar()
         {
           document.getElementsByClassName("loading-screen")[0].style.display = "none";
+          var scroll = document.body;
+          scroll.classList.remove("lock-scroll");
           playPauseVideo();
         }
     </script>
