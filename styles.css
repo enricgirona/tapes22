@@ -52,6 +52,19 @@ body::-webkit-scrollbar {
   transition: all 0.2s ease-in-out;
 }
 
+.popup {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  background-color: #f0dfc3;
+  z-index: 9;
+  top: -100vh;
+}
+
+.popup-open {
+  top: 0;
+}
+
 .column-header-tapa {
   display: flex;
   justify-content: flex-end;

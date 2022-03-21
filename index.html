@@ -63,8 +63,13 @@
       <div class="column-header-middle-tapa">
         <img class="img-header" src="../static/logo.svg" />
       </div>
-      <div class="column-header-tapa"><a href="#"><div class="hamburger" onClick="this.classList.toggle('active')"></div></a></div>
+      <div class="column-header-tapa"><a href="#" onClick="openmodal()" style="height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50px;"><div class="hamburger" id="hamburger"></div></a></div>
     </div>
+    <div class="popup" id="popup"></div>
     <div class="swiper mySwiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper" style="height: 707px;">
@@ -556,6 +561,18 @@ data-setup="{}"
           }
       });
   }</script>
+
+  <script>
+    
+function openmodal(){
+  var menu = document.getElementById("popup");
+  var nav = document.getElementById("hamburger");
+  console.log(menu);
+  menu.classList.toggle('popup-open');
+  nav.classList.toggle('active');
+}
+
+  </script>
      
     <script>
       var swiper = new Swiper(".mySwiper", {loop: true,
