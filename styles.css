@@ -424,8 +424,12 @@ p {
 
 .logo-footer {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
+  flex-direction: column;
+  font-family: SYSTEM-UI;
+  color: #4d509d;
+  font-size: 7px;
 }
 
 .logo-footer img {
