@@ -69,7 +69,10 @@
         align-items: center;
         width: 50px;"><div class="hamburger" id="hamburger"></div></a></div>
     </div>
-    <div class="popup" id="popup"></div>
+    <div class="popup" id="popup"><img src="../static/logo_vadetapes.svg" style="height: 200px;"><div class="popup-content"><p class="popup-title">TAPA + QUINTO / VI / AIGUA</p><p>4 €</p>
+      <p class="popup-title">ELS DIVENDRES D'ABRIL</p><p>4 €</p>
+      <p class="popup-title">HORARI</p><p>4 €</p>
+    </div></div>
     <div class="swiper mySwiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper" style="height: 707px;">
@@ -550,7 +553,6 @@ data-setup="{}"
                                   video.pause();
                               } else if (video.paused) {
                                   video.play();
-                                  console.log("video play")
                               }
                           });
                       },
@@ -567,7 +569,6 @@ data-setup="{}"
 function openmodal(){
   var menu = document.getElementById("popup");
   var nav = document.getElementById("hamburger");
-  console.log(menu);
   menu.classList.toggle('popup-open');
   nav.classList.toggle('active');
 }

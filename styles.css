@@ -59,6 +59,24 @@ body::-webkit-scrollbar {
   background-color: #f0dfc3;
   z-index: 9;
   top: -100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-title {
+  color: #e84141;
+  font-size: 18px;
+  font-family: Barracuda, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !important;
+  padding-top: 26px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .popup-open {
