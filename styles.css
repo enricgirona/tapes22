@@ -31,6 +31,16 @@ body::-webkit-scrollbar {
   }
 }
 
+@media (orientation: portrait) {
+  body {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+}
+
 :root {
   --swiper-theme-color: #4d509d !important;
 }
@@ -164,7 +174,7 @@ video {
 }
 
 .swiper {
-  height: 707px;
+  height: 714px;
 }
 .image-container {
   height: 300px;
@@ -247,7 +257,7 @@ video {
   border-radius: 20px;
   margin-top: 0;
   background-color: #4d509d;
-  min-height: 345px;
+  min-height: 360px;
   color: white;
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol" !important;
