@@ -66,11 +66,19 @@ body::-webkit-scrollbar {
 }
 
 .popup-title {
-  color: #e84141;
+  color: #4d509d;
   font-size: 18px;
   font-family: Barracuda, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol" !important;
   padding-top: 26px;
+  padding-bottom: 5px;
+}
+
+.popup-info {
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol" !important;
+  font-size: 22px;
+  color: #e84141;
 }
 
 .popup-content {
