@@ -56,7 +56,7 @@
           <div class="swiper-slide third-slide"><img class="img-slider-3"  src="../static/ilus_tapes1.svg"><div class="intro-content"><h2 class="intro-head">#ULLVADETAPES22</h2><p class="intro-text">Descobreix-ho tot sobre les tapes d'Ulldecona a continuació.</p><button onclick="continuar()">Destapa!</button></div></div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-intro"></div>
       </div>
     <div class="header-tapa">
       <div class="column-header-tapa"></div>
@@ -69,14 +69,67 @@
         align-items: center;
         width: 50px;"><div class="hamburger" id="hamburger"></div></a></div>
     </div>
-    <div class="popup" id="popup"><img src="../static/logo_vadetapes.svg" style="height: 170px;
-      padding-bottom: 25px;"><div class="popup-content"><p class="popup-title">TAPA + QUINTO / VI / AIGUA</p><div class="popup-info">4 €</div>
-      <p class="popup-title">ELS DIVENDRES D'ABRIL</p><div class="popup-info">1 <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" width="38.91mm" height="38.91mm" viewBox="0 0 110.3 110.3" style="padding: 3px; height: 10px;
-        width: 10px;"><path d="M0,0H0A110.3,110.3,0,0,1,110.3,110.3v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#4d509d"></path></svg> 8 <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" width="38.91mm" height="38.91mm" viewBox="0 0 110.3 110.3" style="padding: 3px; height: 10px;
-        width: 10px;"><path d="M0,0H0A110.3,110.3,0,0,1,110.3,110.3v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#4d509d"></path></svg> 22</div>
-      <p class="popup-title">HORARI</p><div class="popup-info">18.30 <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" width="38.91mm" height="38.91mm" viewBox="0 0 110.3 110.3" style="padding: 3px; height: 10px;
-        width: 10px;"><path d="M0,0H0A110.3,110.3,0,0,1,110.3,110.3v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#4d509d"></path></svg> 21.00h</div>
-    </div></div>
+    <div class="popup" id="popup">
+      <div class="swiper try" style="height: 100vh;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide first-slide-info"><img src="../static/logo_vadetapes.svg" style="height: 170px; padding-bottom: 25px; margin-top: -80px;" />
+            <div class="popup-content">
+              <p class="popup-title">TAPA + QUINTO / VI DO TERRA ALTA / AIGUA</p>
+              <div class="popup-info">4 €</div>
+              <p class="popup-title">ELS DIVENDRES D'ABRIL</p>
+              <div class="popup-info">
+                1
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  data-name="Capa 1"
+                  width="38.91mm"
+                  height="38.91mm"
+                  viewBox="0 0 110.3 110.3"
+                  style="padding: 3px; height: 10px; width: 10px"
+                >
+                  <path d="M0,0H0A110.3,110.3,0,0,1,110.3,110.3v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#4d509d"></path>
+                </svg>
+                8
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  data-name="Capa 1"
+                  width="38.91mm"
+                  height="38.91mm"
+                  viewBox="0 0 110.3 110.3"
+                  style="padding: 3px; height: 10px; width: 10px"
+                >
+                  <path d="M0,0H0A110.3,110.3,0,0,1,110.3,110.3v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#4d509d"></path>
+                </svg>
+                22
+              </div>
+              <p class="popup-title">HORARI</p>
+              <div class="popup-info">
+                18.30
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Capa_1"
+                  data-name="Capa 1"
+                  width="38.91mm"
+                  height="38.91mm"
+                  viewBox="0 0 110.3 110.3"
+                  style="padding: 3px; height: 10px; width: 10px"
+                >
+                  <path d="M0,0H0A110.3,110.3,0,0,1,110.3,110.3v0a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" fill="#4d509d"></path>
+                </svg>
+                21.00h
+              </div>
+            </div>
+            </div>
+          <div class="swiper-slide second-slide-info"><h2 class="intro-head">LO "POSTUREO" TÉ PREMI</h2><div class="slide-2-info"></div><button href="#">Bases del concurs</button><div>
+          </div></div>
+        </div>
+        <div class="swiper-pagination swiper-try"></div>
+      </div>
+</div>
+
+    </div>
     <div class="swiper mySwiper">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper" style="height: 707px;">
@@ -586,8 +639,13 @@ function openmodal(){
         centeredSlides: true, slidesPerView: 1.055 });
         var swiper = new Swiper(".intro", {loop: false,
         centeredSlides: true, slidesPerView: 1, pagination: {
-    el: '.swiper-pagination',
+    el: '.swiper-pagination.swiper-intro',
   },});
+  var swiper = new Swiper(".try", {loop: false,
+        centeredSlides: true, slidesPerView: 1, pagination: {
+    el: '.swiper-pagination.swiper-try',
+  },});
+
         function continuar()
         {
           document.getElementsByClassName("loading-screen")[0].style.display = "none";
