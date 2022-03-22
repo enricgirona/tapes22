@@ -432,6 +432,10 @@ p {
   font-size: 7px;
 }
 
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 100px !important;
+}
+
 .logo-footer img {
   max-height: 30px;
   width: 60px;
