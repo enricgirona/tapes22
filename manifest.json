@@ -3,7 +3,7 @@
     "short_name": "Va De Tapes",
     "start_url": "index.html",
     "display": "standalone",
-    "scope": "https://tapes22.vercel.app/",
+    "scope": "https://tapes22.vercel.app/static",
     "background_color": "#f0dfc3",
     "theme_color": "#f0dfc3",
     "orientation": "portrait",
